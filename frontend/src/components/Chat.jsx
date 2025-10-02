@@ -19,7 +19,7 @@ export default function Chat() {
     scrollToBottom();
   }, [messages, typing]);
 
-  // Listen for AI responses
+  // Listen for response 
   useEffect(() => {
     socket.on("aimsgres", (res) => {
       setTyping(false); // Remove typing indicator
