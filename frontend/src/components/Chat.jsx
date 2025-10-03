@@ -10,7 +10,7 @@ export default function Chat() {
   const [typing, setTyping] = useState(false); // AI typing indicator
   const messagesEndRef = useRef(null);
 
-  // Scroll to bottom
+  // Scroll
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
